@@ -2,7 +2,18 @@
 using namespace std;
 
 char before(char x){
-	//Write your function definition here
+	if(x == 'A'){
+		return 'Z';
+	}
+		else if (x < 'A'){
+		retun x = 0;
+    }
+	    else if (x > 'Z'){
+		retun x=0;
+	}
+	else{
+		return x-1;
+	}
 }
 
 int main(){
@@ -16,4 +27,9 @@ int main(){
 	cout << before('0') << "\n";
 	cout << before('c') << "\n";
 	return 0;
+	
+
+
+
+
 }
